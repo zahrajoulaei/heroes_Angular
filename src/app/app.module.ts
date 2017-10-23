@@ -7,17 +7,35 @@ import { AppComponent }        from './app.component';
 import { HeroDetailComponent } from './hero-detail.component';
 import { HeroesComponent }     from './heroes.component';
 import { HeroService }         from './hero.service';
+import {DashboardComponent } from './dashboard.component'
 
 @NgModule({
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot([
+      {
+        path: 'heroes',
+        component: HeroesComponent
+      },
+      {
+        path: 'dashboard',
+        component: DashboardComponent
+      },
+      {
+        path: 'detail/:id',
+        component: HeroDetailComponent
+      },
+    ])
+
   ],
 
   declarations: [
     AppComponent,
     HeroDetailComponent,
-    HeroesComponent
+    HeroesComponent,
+    DashboardComponent
+
   ],
   providers: [
     HeroService
@@ -28,9 +46,3 @@ import { HeroService }         from './hero.service';
 export class AppModule {
 }
 
-RouterModule.forRoot([
-  {
-    path: 'heroes',
-    component: HeroesComponent
-  }
-])
