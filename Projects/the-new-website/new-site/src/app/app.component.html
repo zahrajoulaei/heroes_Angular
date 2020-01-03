@@ -1,0 +1,45 @@
+<router-outlet></router-outlet>
+<div class ="header">
+  <ul class="fixed-links">
+    <li><a>Who am I?</a></li>
+    <li>|</li>
+    <li><a>Blog</a></li>
+    <li>|</li>
+    <li><a>Projects</a></li>
+  </ul>
+  <div class="arrow"></div>
+  <div class="lang">Language</div>
+</div>
+<div class="main">
+  <div class ="layer-top"></div>
+  <div class="container">
+    <span class="circle2" (click)="openProjects()"><p>Projects</p></span>
+    <div class="circle" (click)="openBio()">
+      <img src="./assets/myface.jpg"/>
+    </div>
+<!--    <div class="circle3" (click)="openBlog()">-->
+    <div class="circle3">
+      <a href="blog">Blog</a>
+      <app-blog *ngIf="displayBlog"></app-blog>
+    </div>
+  </div>
+  <div class ="layer-bot">
+  </div>
+</div>
+
+<div class ="footer">
+  <div class="contact">
+    <ul>
+    <li><a>Linkedin</a></li>
+    <li><a>Xing</a></li>
+    <li><a>Github</a></li>
+    <li><a>Email</a></li>
+    <li><a>Skype</a></li>
+    <li><a>Medium</a></li>
+    <li><a>Twitter</a></li>
+   </ul>
+<!--    <div class="arrow"></div>-->
+    <div class="diamond"></div>
+    <span>designed and implemented by Zahra</span>
+  </div>
+</div>

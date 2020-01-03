@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: 'Barlow-Regular';
+  src:url(./assets/fonts/Barlow-Regular.ttf);
+}
+@font-face {
+  font-family: 'ShadowsIntoLight';
+  src:url(./assets/fonts/ShadowsIntoLight.ttf);
+}
+body {
+  margin:0;
+  padding:0;
+  background: radial-gradient(circle at 181%, #eee, #333 48%, #eee 67%, #eee 77%);
+  height: 100%;
+  font-family: 'Barlow-Regular';
+  color: #333;
+}
+hmtl {
+  height: 100%;
+}
+ul li {
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+}
