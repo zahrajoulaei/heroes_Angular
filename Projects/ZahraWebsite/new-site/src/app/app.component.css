@@ -1,0 +1,117 @@
+
+
+.fixed-links {
+  font-family: 'ShadowsIntoLight';
+}
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 25px solid #333;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer .arrow {
+  border-bottom: 25px solid #333;
+  border-top: 0;
+}
+.diamond {
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  position: relative;
+  top: -16px;
+  margin: auto;
+}
+.diamond:after {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 5px;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top: 8px solid #fff;
+}
+
+.footer {
+  background: radial-gradient(circle at 90%, #333, #595959 48%, #999 69%, #595959 77%);
+  position: fixed;
+  height: 100px;
+  bottom: 0;
+  width: 100%;
+  opacity: 0.8;
+  display: inline-flex;
+  flex-direction: row;
+  z-index: 6;
+  font-family: 'ShadowsIntoLight';
+  color: #bfbfbf;
+  padding: 10px 0;
+}
+.footer ul li {
+  display: inline-flex;
+  padding: 5px;
+}
+.footer span {
+  margin: auto;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+.header {
+  position: fixed;
+  height: 60px;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.lang {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fafafafa;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  margin: 10px;
+  font-family: 'ShadowsIntoLight';
+}
+
+.layer-bot {
+  /*height: 100px;*/
+  margin-bottom: 80px;
+}
+.layer-top {
+  margin-top: 60px;
+  height: 50px;
+}
+
+@media only screen and (max-width: 300px) {
+  .fixed-links {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 500px) and (min-width: 300px){
+  .fixed-links {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 700px) and (min-width: 500px){
+  .fixed-links {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 700px),(min-width: 1200px){
+  .fixed-links {
+    font-size: 20px;
+  }
+}
